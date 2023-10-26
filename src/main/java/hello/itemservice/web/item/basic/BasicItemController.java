@@ -105,6 +105,8 @@ public class BasicItemController {
 		redirectAttributes.addAttribute("itemId", savedItem.getId());
 		redirectAttributes.addAttribute("status", true);
 		return "redirect:/basic/items/{itemId}";
+		//return "redirect:http://www.naver.com";
+		
 	}
 
 	@GetMapping("/{itemId}/edit")
@@ -116,8 +118,8 @@ public class BasicItemController {
 	
 	@PostMapping("/{itemId}/edit")
 	public String edit(@PathVariable Long itemId, @ModelAttribute Item item) {
-	 itemRepository.update(itemId, item);
-	 return "redirect:/basic/items/{itemId}";
+		itemRepository.update(itemId, item);
+		return "redirect:/basic/items/{itemId}";
 	}
 
 	/**
