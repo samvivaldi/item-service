@@ -43,7 +43,7 @@ public class BasicItemController {
 	}
 
 //	@PostMapping("/add")
-//	public String addItemV1(@RequestParam String itemName, @RequestParam(defaultValue = "1000") Integer price,
+//	public String addItemV1(@RequestParam String itemName, @RequestParam(defaultValue = "1000") Integer pri   ce,
 //			@RequestParam Integer quantity, Model model) {
 //		Item item = new Item();
 //		item.setItemName(itemName);
